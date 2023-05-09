@@ -9,11 +9,13 @@
 .card_container{
     flex-direction: column;
     justify-content: flex-start;
+    width: 317px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .form {
     flex-direction: column;
     justify-content: flex-start;
 }
 .card_container h1{
-font-size: 20px;
+   font-size: 20px;
 }
