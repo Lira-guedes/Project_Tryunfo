@@ -26,7 +26,7 @@ export default class Form extends React.Component {
             Nome
             <input
               type="text"
-              name="nome"
+              name="cardName"
               id="nome"
               value={ cardName }
               data-testid="name-input"
@@ -37,7 +37,7 @@ export default class Form extends React.Component {
             Descrição
             <input
               type="textarea"
-              name="description"
+              name="cardDescription"
               id="description"
               value={ cardDescription }
               data-testid="description-input"
@@ -48,7 +48,7 @@ export default class Form extends React.Component {
             Attr01
             <input
               type="number"
-              name="attr1"
+              name="cardAttr1"
               id="attr1"
               value={ cardAttr1 }
               data-testid="attr1-input"
@@ -59,7 +59,7 @@ export default class Form extends React.Component {
             Attr02
             <input
               type="number"
-              name="attr2"
+              name="cardAttr2"
               id="attr2"
               value={ cardAttr2 }
               data-testid="attr2-input"
@@ -70,7 +70,7 @@ export default class Form extends React.Component {
             Attr03
             <input
               type="number"
-              name="attr3"
+              name="cardAttr3"
               id="attr3"
               value={ cardAttr3 }
               data-testid="attr3-input"
@@ -81,7 +81,7 @@ export default class Form extends React.Component {
             Imagem
             <input
               type="text"
-              name="image"
+              name="cardImage"
               id="image"
               value={ cardImage }
               data-testid="image-input"
@@ -91,7 +91,7 @@ export default class Form extends React.Component {
           <label htmlFor="rare">
             Raridade
             <select
-              name="rare"
+              name="cardRare"
               id="rare"
               value={ cardRare }
               data-testid="rare-input"
@@ -106,7 +106,7 @@ export default class Form extends React.Component {
             Super Trybe Trunfo
             <input
               type="checkbox"
-              name="trunfo"
+              name="cardTrunfo"
               id="trunfo"
               checked={ cardTrunfo }
               data-testid="trunfo-input"
