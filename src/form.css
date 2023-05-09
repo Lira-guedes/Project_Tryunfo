@@ -1,0 +1,19 @@
+*{
+    margin: 15px;
+}
+.title{
+    text-align: center;
+    justify-content: center;
+    height: 75px;
+}
+.card_container{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.form {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.card_container h1{
+font-size: 20px;
+}
