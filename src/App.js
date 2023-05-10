@@ -11,11 +11,12 @@ class App extends React.Component {
     cardAttr2: '',
     cardAttr3: '',
     cardImage: '',
-    cardRare: 'normal',
+    cardRare: '',
     hastrunfo: '',
     cardTrunfo: false,
     isSaveButtonDisabled: true,
     onSaveButtonClick: '',
+    savedCards: [],
   };
 
   buttonValidation = () => {
@@ -58,6 +59,30 @@ class App extends React.Component {
 
   onSaveButtonClick = (event) => {
     event.preventDefault();
+    const { cardName, cardDescription, cardAttr1, cardAttr2, cardAttr3,
+      cardImage, cardRare, cardTrunfo, savedCards } = this.state;
+
+    const objectCards = {
+      cardName,
+      cardDescription,
+      cardAttr1,
+      cardAttr2,
+      cardAttr3,
+      cardImage,
+      cardRare,
+      cardTrunfo,
+    };
+    this.setState({
+      cardName: '',
+      cardDescription: '',
+      cardAttr1: '0',
+      cardAttr2: '0',
+      cardAttr3: '0',
+      cardImage: '',
+      cardRare: 'normal',
+      savedCards: savedCards.push(objectCards),
+      cardTrunfo: false,
+    });
   };
 
   render() {
