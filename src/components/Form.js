@@ -52,6 +52,7 @@ export default class Form extends React.Component {
               type="number"
               name="cardAttr1"
               id="attr1"
+              minLength="0"
               value={ cardAttr1 }
               data-testid="attr1-input"
               onChange={ onInputChange }
@@ -63,6 +64,7 @@ export default class Form extends React.Component {
               type="number"
               name="cardAttr2"
               id="attr2"
+              minLength="0"
               value={ cardAttr2 }
               data-testid="attr2-input"
               onChange={ onInputChange }
@@ -74,6 +76,7 @@ export default class Form extends React.Component {
               type="number"
               name="cardAttr3"
               id="attr3"
+              minLength="0"
               value={ cardAttr3 }
               data-testid="attr3-input"
               onChange={ onInputChange }
@@ -85,7 +88,6 @@ export default class Form extends React.Component {
               type="text"
               name="cardImage"
               id="image"
-              maxLength="50"
               value={ cardImage }
               data-testid="image-input"
               onChange={ onInputChange }
@@ -106,7 +108,7 @@ export default class Form extends React.Component {
             </select>
           </label>
           <label htmlFor="trunfo">
-            Super Trybe Trunfo
+            Super Trunfo
             <input
               type="checkbox"
               name="cardTrunfo"

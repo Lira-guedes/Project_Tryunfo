@@ -5,6 +5,8 @@
     text-align: center;
     justify-content: center;
     height: 75px;
+    font-size: 20px;
+    color: rgb(24, 124, 114);
 }
 .form_container{
     flex-direction: column;
@@ -22,7 +24,8 @@ form {
     margin-bottom: 30px;
 }
 .form_container h1{
-   font-size: 20px;
+   font-size: 23px;
+   color: rgb(24, 124, 114);
 }
 .card_container{
     flex-direction: column;
@@ -34,7 +37,8 @@ form {
     padding: 30px;
 }
 .card_container h1{
-    font-size: 20px;
+    font-size: 23px;
+    color: rgb(24, 124, 114);
  }
 
  .cards{

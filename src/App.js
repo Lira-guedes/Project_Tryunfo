@@ -11,8 +11,40 @@ class App extends React.Component {
     cardAttr2: '',
     cardAttr3: '',
     cardImage: '',
-    cardRare: '',
+    cardRare: 'normal',
+    hastrunfo: '',
     cardTrunfo: false,
+    isSaveButtonDisabled: true,
+    onSaveButtonClick: '',
+  };
+
+  buttonValidation = () => {
+    const {
+      cardName,
+      cardDescription,
+      cardAttr1,
+      cardAttr2,
+      cardAttr3,
+      cardImage,
+    } = this.state;
+    const max = 90;
+    const total = 210;
+    const validationCard = cardName !== '' && cardDescription !== '' && cardImage !== '';
+    const validationAttr = Number(cardAttr1) <= max && Number(cardAttr1) >= 0
+    && Number(cardAttr2) <= max && Number(cardAttr2) >= 0
+    && Number(cardAttr3) <= max && Number(cardAttr3) >= 0
+    && Number(cardAttr1) + Number(cardAttr2) + Number(cardAttr3) <= total;
+    console.log(Number(cardAttr1) + Number(cardAttr2) + Number(cardAttr3));
+    console.log(validationCard, validationAttr);
+    if (validationCard && validationAttr) {
+      this.setState({
+        isSaveButtonDisabled: false,
+      });
+    } else {
+      this.setState({
+        isSaveButtonDisabled: true,
+      });
+    }
   };
 
   onInputChange = ({ target }) => {
@@ -21,15 +53,11 @@ class App extends React.Component {
     this.setState((prev) => ({
       ...prev,
       [name]: valueField,
-    }));
+    }), () => { this.buttonValidation(); });
   };
 
   onSaveButtonClick = (event) => {
     event.preventDefault();
-  };
-
-  isSaveButtonDisabled = () => {
-
   };
 
   render() {
@@ -42,6 +70,7 @@ class App extends React.Component {
       cardImage,
       cardRare,
       cardTrunfo,
+      isSaveButtonDisabled,
     } = this.state;
 
     return (
@@ -62,7 +91,7 @@ class App extends React.Component {
               cardTrunfo={ cardTrunfo }
               onInputChange={ this.onInputChange }
               onSaveButtonClick={ this.onSaveButtonClick }
-              isSaveButtonDisabled={ this.isSaveButtonDisabled }
+              isSaveButtonDisabled={ isSaveButtonDisabled }
             />
           </div>
           <div className="right">
