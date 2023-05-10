@@ -19,7 +19,7 @@ export default class Form extends React.Component {
       onSaveButtonClick,
     } = this.props;
     return (
-      <div className="card_container">
+      <div className="form_container">
         <h1>Adicione Nova Carta</h1>
         <form>
           <label htmlFor="nome">
@@ -28,6 +28,7 @@ export default class Form extends React.Component {
               type="text"
               name="cardName"
               id="nome"
+              maxLength="50"
               value={ cardName }
               data-testid="name-input"
               onChange={ onInputChange }
@@ -39,6 +40,7 @@ export default class Form extends React.Component {
               type="textarea"
               name="cardDescription"
               id="description"
+              maxLength="100"
               value={ cardDescription }
               data-testid="description-input"
               onChange={ onInputChange }
@@ -83,6 +85,7 @@ export default class Form extends React.Component {
               type="text"
               name="cardImage"
               id="image"
+              maxLength="50"
               value={ cardImage }
               data-testid="image-input"
               onChange={ onInputChange }
@@ -114,6 +117,7 @@ export default class Form extends React.Component {
             />
           </label>
           <button
+            type="submit"
             name="save"
             id="save"
             disabled={ isSaveButtonDisabled }

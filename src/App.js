@@ -24,6 +24,14 @@ class App extends React.Component {
     }));
   };
 
+  onSaveButtonClick = (event) => {
+    event.preventDefault();
+  };
+
+  isSaveButtonDisabled = () => {
+
+  };
+
   render() {
     const {
       cardName,
@@ -41,31 +49,36 @@ class App extends React.Component {
         <div className="title">
           <h1>Tryunfo</h1>
         </div>
-        <div className="left">
-          <Form
-            cardName={ cardName }
-            cardDescription={ cardDescription }
-            cardAttr1={ cardAttr1 }
-            cardAttr2={ cardAttr2 }
-            cardAttr3={ cardAttr3 }
-            cardImage={ cardImage }
-            cardRare={ cardRare }
-            cardTrunfo={ cardTrunfo }
-            onInputChange={ this.onInputChange }
-          />
-        </div>
-        <div className="right">
-          <Card
-            cardName={ cardName }
-            cardDescription={ cardDescription }
-            cardAttr1={ cardAttr1 }
-            cardAttr2={ cardAttr2 }
-            cardAttr3={ cardAttr3 }
-            cardImage={ cardImage }
-            cardRare={ cardRare }
-            cardTrunfo={ cardTrunfo }
-            onInputChange={ this.onInputChange }
-          />
+        <div className="cards">
+          <div className="left">
+            <Form
+              cardName={ cardName }
+              cardDescription={ cardDescription }
+              cardAttr1={ cardAttr1 }
+              cardAttr2={ cardAttr2 }
+              cardAttr3={ cardAttr3 }
+              cardImage={ cardImage }
+              cardRare={ cardRare }
+              cardTrunfo={ cardTrunfo }
+              onInputChange={ this.onInputChange }
+              onSaveButtonClick={ this.onSaveButtonClick }
+              isSaveButtonDisabled={ this.isSaveButtonDisabled }
+            />
+          </div>
+          <div className="right">
+            <Card
+              cardName={ cardName }
+              cardDescription={ cardDescription }
+              cardAttr1={ cardAttr1 }
+              cardAttr2={ cardAttr2 }
+              cardAttr3={ cardAttr3 }
+              cardImage={ cardImage }
+              cardRare={ cardRare }
+              cardTrunfo={ cardTrunfo }
+            // onInputChange={ this.onInputChange }
+            // onSaveButtonClick={ this.onSaveButtonClick }
+            />
+          </div>
         </div>
       </div>
     );

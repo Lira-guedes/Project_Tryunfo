@@ -15,7 +15,8 @@ export default class Card extends React.Component {
       cardTrunfo,
     } = this.props;
     return (
-      <div>
+      <div className="card_container">
+        <h1>Pré-visualização</h1>
         <h2 data-testid="name-card">{ cardName }</h2>
         <img src={ cardImage } alt={ cardName } data-testid="image-card" />
         <h3 data-testid="description-card">{ cardDescription }</h3>
