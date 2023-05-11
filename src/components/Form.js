@@ -124,7 +124,7 @@ export default class Form extends React.Component {
           <button
             type="submit"
             name="save"
-            id="save"
+            className="save"
             disabled={ isSaveButtonDisabled }
             data-testid="save-button"
             onClick={ onSaveButtonClick }

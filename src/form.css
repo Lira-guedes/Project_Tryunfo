@@ -1,118 +1,137 @@
 * {
   margin: 15px;
 }
+
 .main {
   flex-direction: column;
 }
+
 .title {
-  text-align: center;
-  justify-content: center;
-  height: 75px;
-  font-size: 20px;
   color: rgb(24, 124, 114);
+  font-size: 20px;
+  height: 75px;
+  justify-content: center;
+  text-align: center;
 }
+
 .form_container {
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 270px;
-  height: 380px;
-  box-shadow: 8px 4px 19px rgba(0, 0, 0, 0.9);
   border-radius: 11px;
-  padding: 30px;
+  box-shadow: 8px 4px 19px rgba(0, 0, 0, 0.9);
   color: rgb(18, 103, 95);
+  flex-direction: column;
+  height: 380px;
+  justify-content: flex-start;
+  padding: 30px;
+  width: 270px;
 }
+
 form {
   flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 30px;
-  margin-bottom: 30px;
   font-size: 10px;
-}
-.right h1 {
-  font-size: 23px;
-  color: rgb(24, 124, 114);
-}
-.card_container {
-  flex-direction: column;
   justify-content: flex-start;
-  width: 270px;
-  height: 380px;
-  box-shadow: 8px 4px 19px rgba(0, 0, 0, 0.9);
-  border-radius: 11px;
-  padding: 30px;
-  color: rgb(18, 103, 95);
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
-.left h1 {
-  font-size: 23px;
+
+.right h1 {
   color: rgb(24, 124, 114);
+  font-size: 23px;
 }
-#save {
-  color: aliceblue;
+
+.card_container {
+  border-radius: 11px;
+  box-shadow: 8px 4px 19px rgba(0, 0, 0, 0.9);
+  color: rgb(18, 103, 95);
+  flex-direction: column;
+  height: 380px;
+  justify-content: flex-start;
+  padding: 30px;
+  width: 270px;
+}
+
+.left h1 {
+  color: rgb(24, 124, 114);
+  font-size: 23px;
+}
+
+.save {
   background-color: rgb(24, 124, 114);
   border-radius: 8px;
-  width: 100px;
-  padding: 3px;
-}
-#delete {
   color: aliceblue;
+  padding: 3px;
+  width: 100px;
+}
+
+.delete {
   background-color: rgb(24, 124, 114);
   border-radius: 8px;
-  width: 100px;
+  color: aliceblue;
   padding: 3px;
+  width: 100px;
 }
+
 .newCards {
   flex-wrap: wrap;
 }
+
 ul {
   display: flex;
 }
 
 .cards {
   display: flex;
-  text-align: center;
   justify-content: center;
+  text-align: center;
 }
 
 input {
   margin: 10px;
 }
+
 .nome {
   display: flex;
-  margin: 0px;
   font-size: 15px;
+  margin: 1px;
 }
+
 .description {
   display: flex;
-  margin: 0px;
   font-size: 15px;
+  margin: 1px;
 }
+
 .attr1 {
   display: flex;
-  margin: 0px;
   font-size: 15px;
+  margin: 1px;
 }
+
 .attr2 {
   display: flex;
-  margin: 0px;
   font-size: 15px;
+  margin: 1px;
 }
+
 .attr3 {
   display: flex;
-  margin: 0px;
   font-size: 15px;
+  margin: 1px;
 }
+
 .image {
   display: flex;
-  margin: 0px;
   font-size: 15px;
+  margin: 1px;
 }
+
 .rare {
   display: flex;
-  margin: 0px;
   font-size: 15px;
+  margin: 1px;
 }
+
 .trunfo {
   display: flex;
-  margin: 0px;
   font-size: 15px;
+  margin: 1px;
 }

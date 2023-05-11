@@ -153,7 +153,7 @@ class App extends React.Component {
                 <li key={ elem.cardName }>
                   <Card { ...elem } />
                   <button
-                    id="delete"
+                    className="delete"
                     data-testid="delete-button"
                     onClick={ () => this.deleteButton(elem.cardName) }
                   >
