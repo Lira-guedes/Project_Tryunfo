@@ -56,9 +56,7 @@ class App extends React.Component {
     const valueField = target.type === 'checkbox' ? target.checked : target.value;
     this.setState(
       {
-        // ...prev,
         [name]: valueField,
-        // savedCards: [...prev.savedCards, saveCards],
       },
       () => this.buttonValidation(),
     );
@@ -86,6 +84,15 @@ class App extends React.Component {
     }));
   };
 
+  deleteButton = (name) => {
+    const { savedCards } = this.state;
+    const deletedcard = savedCards.filter((elem) => elem.cardName !== name);
+    this.setState({
+      savedCards: deletedcard,
+    });
+    // delete savedCards;
+  };
+
   render() {
     const {
       cardName,
@@ -101,7 +108,7 @@ class App extends React.Component {
     } = this.state;
 
     return (
-      <div>
+      <div className="main">
         <div className="title">
           <h1>Tryunfo</h1>
         </div>
@@ -138,15 +145,24 @@ class App extends React.Component {
               // onSaveButtonClick={ this.onSaveButtonClick }
             />
           </div>
-          <div className="newCards">
-            <ul>
-              {
-                savedCards.map((elem) => (
-                  <li key={ elem.cardName }><Card { ...elem } /></li>
-                ))
-              }
-            </ul>
-          </div>
+        </div>
+        <div className="newCards">
+          <ul>
+            {
+              savedCards.map((elem) => (
+                <li key={ elem.cardName }>
+                  <Card { ...elem } />
+                  <button
+                    id="delete"
+                    data-testid="delete-button"
+                    onClick={ () => this.deleteButton(elem.cardName) }
+                  >
+                    Excluir
+                  </button>
+                </li>
+              ))
+            }
+          </ul>
         </div>
       </div>
     );
