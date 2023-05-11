@@ -18,28 +18,10 @@ export default class Form extends React.Component {
       onInputChange,
       onSaveButtonClick,
     } = this.props;
-
-    const spanHasTrunfo = hasTrunfo ? (
-      <span>Você já tem um Super Trunfo em seu baralho</span>
-    ) : (
-      <label htmlFor="trunfo">
-        Super Trunfo
-        <input
-          type="checkbox"
-          name="cardTrunfo"
-          id="trunfo"
-          checked={ cardTrunfo }
-          data-testid="trunfo-input"
-          onChange={ onInputChange }
-        />
-      </label>
-    );
-
     return (
       <div className="form_container">
-        <h1>Adicione Nova Carta</h1>
         <form>
-          <label htmlFor="nome">
+          <label className="nome">
             Nome
             <input
               type="text"
@@ -51,7 +33,7 @@ export default class Form extends React.Component {
               onChange={ onInputChange }
             />
           </label>
-          <label htmlFor="description">
+          <label className="description">
             Descrição
             <input
               type="textarea"
@@ -63,7 +45,7 @@ export default class Form extends React.Component {
               onChange={ onInputChange }
             />
           </label>
-          <label htmlFor="attr1">
+          <label className="attr1">
             Attr01
             <input
               type="number"
@@ -75,7 +57,7 @@ export default class Form extends React.Component {
               onChange={ onInputChange }
             />
           </label>
-          <label htmlFor="attr2">
+          <label className="attr2">
             Attr02
             <input
               type="number"
@@ -87,7 +69,7 @@ export default class Form extends React.Component {
               onChange={ onInputChange }
             />
           </label>
-          <label htmlFor="attr3">
+          <label className="attr3">
             Attr03
             <input
               type="number"
@@ -99,7 +81,7 @@ export default class Form extends React.Component {
               onChange={ onInputChange }
             />
           </label>
-          <label htmlFor="image">
+          <label className="image">
             Imagem
             <input
               type="text"
@@ -110,7 +92,7 @@ export default class Form extends React.Component {
               onChange={ onInputChange }
             />
           </label>
-          <label htmlFor="rare">
+          <label className="rare">
             Raridade
             <select
               name="cardRare"
@@ -124,7 +106,21 @@ export default class Form extends React.Component {
               <option value="muito raro">muito raro</option>
             </select>
           </label>
-          { spanHasTrunfo }
+          {hasTrunfo ? (
+            <span>Você já tem um Super Trunfo em seu baralho</span>
+          ) : (
+            <label className="rare">
+              Super Trunfo
+              <input
+                type="checkbox"
+                name="cardTrunfo"
+                id="trunfo"
+                checked={ cardTrunfo }
+                data-testid="trunfo-input"
+                onChange={ onInputChange }
+              />
+            </label>
+          )}
           <button
             type="submit"
             name="save"
