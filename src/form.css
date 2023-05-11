@@ -1,118 +1,118 @@
-*{
-    margin: 15px;
+* {
+  margin: 15px;
 }
-.main{
-    flex-direction: column;
+.main {
+  flex-direction: column;
 }
-.title{
-    text-align: center;
-    justify-content: center;
-    height: 75px;
-    font-size: 20px;
-    color: rgb(24, 124, 114);
+.title {
+  text-align: center;
+  justify-content: center;
+  height: 75px;
+  font-size: 20px;
+  color: rgb(24, 124, 114);
 }
-.form_container{
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 270px;
-    height: 380px;
-    box-shadow: 8px 4px 19px rgba(0, 0, 0, 0.9);
-    border-radius: 11px;
-    padding: 30px;
-    color: rgb(18, 103, 95);
+.form_container {
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 270px;
+  height: 380px;
+  box-shadow: 8px 4px 19px rgba(0, 0, 0, 0.9);
+  border-radius: 11px;
+  padding: 30px;
+  color: rgb(18, 103, 95);
 }
 form {
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 10px;
 }
-.right h1{
-   font-size: 23px;
-   color: rgb(24, 124, 114);
+.right h1 {
+  font-size: 23px;
+  color: rgb(24, 124, 114);
 }
-.card_container{
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 270px;
-    height: 380px;
-    box-shadow: 8px 4px 19px rgba(0, 0, 0, 0.9);
-    border-radius: 11px;
-    padding: 30px;
-    color: rgb(18, 103, 95);
+.card_container {
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 270px;
+  height: 380px;
+  box-shadow: 8px 4px 19px rgba(0, 0, 0, 0.9);
+  border-radius: 11px;
+  padding: 30px;
+  color: rgb(18, 103, 95);
 }
-.left h1{
-    font-size: 23px;
-    color: rgb(24, 124, 114);
- }
- #save{
-    color: aliceblue;
-    background-color: rgb(24, 124, 114);
-    border-radius: 8px;
-    width: 100px;
-    padding: 3px;
+.left h1 {
+  font-size: 23px;
+  color: rgb(24, 124, 114);
 }
-#delete{
-    color: aliceblue;
-    background-color: rgb(24, 124, 114);
-    border-radius: 8px;
-    width: 100px;
-    padding: 3px;
+#save {
+  color: aliceblue;
+  background-color: rgb(24, 124, 114);
+  border-radius: 8px;
+  width: 100px;
+  padding: 3px;
 }
-.newCards{
-    flex-wrap: wrap;
+#delete {
+  color: aliceblue;
+  background-color: rgb(24, 124, 114);
+  border-radius: 8px;
+  width: 100px;
+  padding: 3px;
+}
+.newCards {
+  flex-wrap: wrap;
 }
 ul {
-    display: flex;
+  display: flex;
 }
 
- .cards{
+.cards {
   display: flex;
   text-align: center;
   justify-content: center;
- }
-
- input{
-    margin: 10px;
- }
- .nome {
-   display: flex;
-   margin: 0px;
-   font-size: 15px;
- }
- .description {
-    display: flex;
-    margin: 0px;
-   font-size: 15px;
 }
- .attr1 {
-    display: flex;
-    margin: 0px;
-   font-size: 15px;
- }
- .attr2 {
-    display: flex;
-    margin: 0px;
-   font-size: 15px;
- }
- .attr3 {
-    display: flex;
-    margin: 0px;
-     font-size: 15px;
- }
- .image {
-    display: flex;
-    margin: 0px;
-     font-size: 15px;
- }
- .rare {
-    display: flex;
-    margin: 0px;
-     font-size: 15px;
- }
- .trunfo {
-    display: flex;
-    margin: 0px;
-     font-size: 15px;
- }
+
+input {
+  margin: 10px;
+}
+.nome {
+  display: flex;
+  margin: 0px;
+  font-size: 15px;
+}
+.description {
+  display: flex;
+  margin: 0px;
+  font-size: 15px;
+}
+.attr1 {
+  display: flex;
+  margin: 0px;
+  font-size: 15px;
+}
+.attr2 {
+  display: flex;
+  margin: 0px;
+  font-size: 15px;
+}
+.attr3 {
+  display: flex;
+  margin: 0px;
+  font-size: 15px;
+}
+.image {
+  display: flex;
+  margin: 0px;
+  font-size: 15px;
+}
+.rare {
+  display: flex;
+  margin: 0px;
+  font-size: 15px;
+}
+.trunfo {
+  display: flex;
+  margin: 0px;
+  font-size: 15px;
+}
